@@ -42,8 +42,10 @@ export default function Header({ onBookClick, onNavigate }: HeaderProps) {
   ];
 
   const handleItemClick = (id: string) => {
-    onNavigate(id);
     setIsMobileMenuOpen(false);
+    setTimeout(() => {
+      onNavigate(id);
+    }, 50);
   };
 
   return (
