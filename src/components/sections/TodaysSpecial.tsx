@@ -79,7 +79,7 @@ export default function TodaysSpecial({ onOrderSpecial }: TodaysSpecialProps) {
             </div>
 
             {/* Interactive Dotted List of Items */}
-            <div className="space-y-6">
+            <div className="space-y-6 min-h-[320px] sm:min-h-0">
               {menuList.map((item, idx) => (
                 <div
                   key={idx}
