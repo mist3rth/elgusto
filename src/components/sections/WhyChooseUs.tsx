@@ -1,5 +1,5 @@
 import React from "react";
-import { ChefHat, ShieldAlert, Heart, Smile, UtensilsCrossed } from "lucide-react";
+import { ChefHat, ShieldAlert, Heart, Smile, UtensilsCrossed, Leaf, Wheat, Award } from "lucide-react";
 // @ts-ignore
 import whyChooseUsImg from "../../assets/why-choose-us.webp";
 
@@ -88,27 +88,47 @@ export default function WhyChooseUs() {
 
             {/* Labels & Certifications */}
             <div className="pt-10 mt-6 border-t border-emerald-900/40">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-8">
                 <UtensilsCrossed size={18} className="text-amber-500" />
                 <span className="text-amber-500 font-serif text-sm font-semibold tracking-widest uppercase">
                   Nos Certifications & Engagements
                 </span>
               </div>
-              <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-                <div className="flex flex-col gap-1.5">
-                  <span className="text-neutral-100 font-serif text-lg tracking-wide">Green Food</span>
-                  <span className="text-emerald-400/70 font-sans text-[10px] uppercase tracking-widest">Éco-responsable</span>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                
+                {/* Badge 1: Green Food */}
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full border border-emerald-500/30 bg-emerald-900/20 flex items-center justify-center shrink-0">
+                    <Leaf size={20} className="text-emerald-400" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-neutral-100 font-serif text-sm tracking-wide">Green Food</span>
+                    <span className="text-emerald-400/70 font-sans text-[9px] uppercase tracking-widest">Éco-responsable</span>
+                  </div>
                 </div>
-                <div className="hidden sm:block w-px h-10 bg-emerald-900/50"></div>
-                <div className="flex flex-col gap-1.5">
-                  <span className="text-neutral-100 font-serif text-lg tracking-wide">Label AB</span>
-                  <span className="text-emerald-400/70 font-sans text-[10px] uppercase tracking-widest">Agriculture Biologique</span>
+
+                {/* Badge 2: Label AB */}
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full border border-emerald-500/30 bg-emerald-900/20 flex items-center justify-center shrink-0">
+                    <Wheat size={20} className="text-emerald-400" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-neutral-100 font-serif text-sm tracking-wide">Label AB</span>
+                    <span className="text-emerald-400/70 font-sans text-[9px] uppercase tracking-widest">Agriculture Biologique</span>
+                  </div>
                 </div>
-                <div className="hidden sm:block w-px h-10 bg-emerald-900/50"></div>
-                <div className="flex flex-col gap-1.5">
-                  <span className="text-neutral-100 font-serif text-lg tracking-wide">Maître Restaurateur</span>
-                  <span className="text-amber-400/70 font-sans text-[10px] uppercase tracking-widest">Fait Maison Certifié</span>
+
+                {/* Badge 3: Maître Restaurateur */}
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full border border-amber-500/30 bg-amber-900/10 flex items-center justify-center shrink-0">
+                    <Award size={20} className="text-amber-400" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-neutral-100 font-serif text-sm tracking-wide">Maître Restaurateur</span>
+                    <span className="text-amber-400/70 font-sans text-[9px] uppercase tracking-widest">Fait Maison Certifié</span>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
