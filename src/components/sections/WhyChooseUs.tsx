@@ -1,5 +1,5 @@
 import React from "react";
-import { ChefHat, ShieldAlert, Heart, Smile, Leaf, Sprout, Award } from "lucide-react";
+import { ChefHat, ShieldAlert, Heart, Smile, UtensilsCrossed } from "lucide-react";
 // @ts-ignore
 import whyChooseUsImg from "../../assets/why-choose-us.webp";
 
@@ -87,22 +87,27 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Labels & Certifications */}
-            <div className="pt-8 mt-4 border-t border-emerald-900/50">
-              <span className="text-emerald-500/80 font-sans text-[10px] font-bold tracking-widest uppercase block mb-4">
-                Nos Certifications & Engagements
-              </span>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2 bg-emerald-900/40 border border-emerald-800/60 rounded-lg px-3 py-1.5 backdrop-blur-sm shadow-sm cursor-default hover:bg-emerald-900/60 transition-colors">
-                  <Leaf size={14} className="text-emerald-400" />
-                  <span className="text-neutral-200 font-sans text-xs font-semibold tracking-wide">Green Food</span>
+            <div className="pt-10 mt-6 border-t border-emerald-900/40">
+              <div className="flex items-center gap-3 mb-6">
+                <UtensilsCrossed size={18} className="text-amber-500" />
+                <span className="text-amber-500 font-serif text-sm font-semibold tracking-widest uppercase">
+                  Nos Certifications & Engagements
+                </span>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-neutral-100 font-serif text-lg tracking-wide">Green Food</span>
+                  <span className="text-emerald-400/70 font-sans text-[10px] uppercase tracking-widest">Éco-responsable</span>
                 </div>
-                <div className="flex items-center space-x-2 bg-emerald-900/40 border border-emerald-800/60 rounded-lg px-3 py-1.5 backdrop-blur-sm shadow-sm cursor-default hover:bg-emerald-900/60 transition-colors">
-                  <Sprout size={14} className="text-green-400" />
-                  <span className="text-neutral-200 font-sans text-xs font-semibold tracking-wide">Label AB</span>
+                <div className="hidden sm:block w-px h-10 bg-emerald-900/50"></div>
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-neutral-100 font-serif text-lg tracking-wide">Label AB</span>
+                  <span className="text-emerald-400/70 font-sans text-[10px] uppercase tracking-widest">Agriculture Biologique</span>
                 </div>
-                <div className="flex items-center space-x-2 bg-emerald-900/40 border border-emerald-800/60 rounded-lg px-3 py-1.5 backdrop-blur-sm shadow-sm cursor-default hover:bg-emerald-900/60 transition-colors">
-                  <Award size={14} className="text-amber-400" />
-                  <span className="text-neutral-200 font-sans text-xs font-semibold tracking-wide">Maître Restaurateur</span>
+                <div className="hidden sm:block w-px h-10 bg-emerald-900/50"></div>
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-neutral-100 font-serif text-lg tracking-wide">Maître Restaurateur</span>
+                  <span className="text-amber-400/70 font-sans text-[10px] uppercase tracking-widest">Fait Maison Certifié</span>
                 </div>
               </div>
             </div>
