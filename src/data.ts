@@ -232,7 +232,7 @@ export const foodItems: FoodItem[] = [
     price: 8.50,
     rating: 4.7,
     category: "dessert",
-    image: "https://images.unsplash.com/photo-1516685018646-549198525c1b?auto=format&fit=crop&q=80&w=500",
+    image: "https://images.unsplash.com/photo-1473347538260-264627d750fa?auto=format&fit=crop&q=80&w=500",
   },
   {
     id: "dessert-4",
