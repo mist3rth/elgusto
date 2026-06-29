@@ -134,7 +134,7 @@ export default function Header({ onBookClick, onNavigate }: HeaderProps) {
 
       {/* Mobile Drawer Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[60] bg-neutral-950 flex flex-col pt-24 px-6 lg:hidden animate-in fade-in duration-300">
+        <div className="fixed inset-0 z-[60] bg-neutral-950 flex flex-col pt-24 pb-8 px-6 lg:hidden animate-in fade-in duration-300 overflow-y-auto">
           <div className="absolute top-4 left-4 sm:left-6 flex items-center space-x-3">
             <div className="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center text-neutral-950 font-bold text-lg">
               E
