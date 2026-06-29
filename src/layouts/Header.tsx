@@ -112,9 +112,11 @@ export default function Header({ onBookClick, onNavigate }: HeaderProps) {
           <div className="flex items-center space-x-4">
             <button
               onClick={onBookClick}
-              className="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-neutral-950 font-sans text-sm font-semibold px-5 py-2.5 rounded transition-all transform hover:-translate-y-0.5 cursor-pointer shadow-lg shadow-amber-500/10"
+              className="bg-amber-500 hover:bg-amber-600 text-neutral-950 font-sans text-sm font-semibold p-2.5 sm:px-5 sm:py-2.5 rounded transition-all transform hover:-translate-y-0.5 cursor-pointer shadow-lg shadow-amber-500/10 flex items-center justify-center gap-2"
+              aria-label="Réserver une table"
             >
-              Réserver une table
+              <CalendarDays size={20} className="sm:hidden" />
+              <span className="hidden sm:inline">Réserver une table</span>
             </button>
 
             {/* Mobile Menu Icon */}
