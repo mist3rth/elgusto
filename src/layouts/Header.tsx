@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, Clock, MapPin, ShoppingBag, Award } from "lucide-react";
+import { Menu, X, Phone, Clock, MapPin, ShoppingBag, Award, CalendarDays } from "lucide-react";
 
 interface HeaderProps {
   onBookClick: () => void;
@@ -164,9 +164,10 @@ export default function Header({ onBookClick, onNavigate }: HeaderProps) {
                   setIsMobileMenuOpen(false);
                   onBookClick();
                 }}
-                className="w-full max-w-xs bg-amber-500 hover:bg-amber-600 text-neutral-950 font-sans text-base font-semibold py-3 rounded transition-all shadow-lg cursor-pointer"
+                className="w-full max-w-xs bg-amber-500 hover:bg-amber-600 text-neutral-950 font-sans text-base font-semibold py-3 rounded transition-all shadow-lg cursor-pointer flex items-center justify-center gap-2"
               >
-                Réserver une table
+                <CalendarDays size={18} />
+                <span>Réserver une table</span>
               </button>
               <div className="text-neutral-500 text-xs text-center space-y-1 pt-4">
                 <p>01 45 67 89 10</p>
