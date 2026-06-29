@@ -1,7 +1,13 @@
 import React from "react";
-import { ChefHat, ShieldAlert, Heart, Smile, UtensilsCrossed, Leaf, Wheat, Award } from "lucide-react";
+import { ChefHat, ShieldAlert, Heart, Smile, UtensilsCrossed } from "lucide-react";
 // @ts-ignore
 import whyChooseUsImg from "../../assets/why-choose-us.webp";
+// @ts-ignore
+import greenfoodImg from "../../assets/greenfood.webp";
+// @ts-ignore
+import abImg from "../../assets/ab.webp";
+// @ts-ignore
+import maitreRestaurateurImg from "../../assets/maitrerestaurateur.webp";
 
 export default function WhyChooseUs() {
   const points = [
@@ -98,8 +104,8 @@ export default function WhyChooseUs() {
                 
                 {/* Badge 1: Green Food */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full border border-emerald-500/30 bg-emerald-900/20 flex items-center justify-center shrink-0">
-                    <Leaf size={20} className="text-emerald-400" />
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-emerald-500/30 flex items-center justify-center shrink-0">
+                    <img src={greenfoodImg} alt="Green Food" className="w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-neutral-100 font-serif text-sm tracking-wide">Green Food</span>
@@ -109,8 +115,8 @@ export default function WhyChooseUs() {
 
                 {/* Badge 2: Label AB */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full border border-emerald-500/30 bg-emerald-900/20 flex items-center justify-center shrink-0">
-                    <Wheat size={20} className="text-emerald-400" />
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-emerald-500/30 flex items-center justify-center shrink-0">
+                    <img src={abImg} alt="Label AB" className="w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-neutral-100 font-serif text-sm tracking-wide">Label AB</span>
@@ -120,8 +126,8 @@ export default function WhyChooseUs() {
 
                 {/* Badge 3: Maître Restaurateur */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full border border-amber-500/30 bg-amber-900/10 flex items-center justify-center shrink-0">
-                    <Award size={20} className="text-amber-400" />
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-amber-500/30 flex items-center justify-center shrink-0 bg-white">
+                    <img src={maitreRestaurateurImg} alt="Maître Restaurateur" className="w-full h-full object-contain p-1" />
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-neutral-100 font-serif text-sm tracking-wide">Maître Restaurateur</span>
