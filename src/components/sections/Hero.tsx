@@ -16,7 +16,7 @@ export default function Hero({ onBookClick, onExploreClick }: HeroProps) {
         <img fetchPriority="high"
           src={heroBg}
           alt="Hero Background"
-          className="w-full h-full object-cover object-center opacity-80 select-none pointer-events-none"
+          className="w-full h-full object-cover object-[75%_center] sm:object-center opacity-80 select-none pointer-events-none"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/60 via-neutral-950/30 to-neutral-950/10" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-950/10 to-neutral-950/80" />
