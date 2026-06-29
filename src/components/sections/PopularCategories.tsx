@@ -185,7 +185,7 @@ export default function PopularCategories({
                     </div>
                     <div>
                       <span className="text-[9px] font-sans text-neutral-400 block uppercase tracking-wider">Allergènes</span>
-                      <span className="font-sans text-[10px] font-semibold text-amber-600 block truncate" title="Sans Produits Laitiers">Sans Produits Laitiers</span>
+                      <span className="font-sans text-[10px] font-semibold text-amber-600 block leading-tight break-words" title="Sans Produits Laitiers">Sans Produits Laitiers</span>
                     </div>
                   </div>
 
