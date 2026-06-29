@@ -1,0 +1,6 @@
+{
+  "name": "BiteCraft Restaurant",
+  "description": "Delicious Food Made With Love & Passion. Reserve your table at BiteCraft for an unforgettable gourmet dining experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
