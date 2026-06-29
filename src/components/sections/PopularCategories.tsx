@@ -20,8 +20,15 @@ export default function PopularCategories({
   const [favorites, setFavorites] = useState<string[]>([]);
   const carouselRef = useRef<HTMLDivElement>(null);
 
+  const isFirstRender = useRef(true);
+
   // Remettre le carrousel au début quand la catégorie change ou qu'une recommandation est cliquée
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    
     if (carouselRef.current) {
       carouselRef.current.scrollTo({ left: 0, behavior: "smooth" });
     }
